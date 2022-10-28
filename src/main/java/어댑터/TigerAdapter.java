@@ -8,15 +8,15 @@ public class TigerAdapter extends Animal {
         this.outerTiger = outerTiger;
     }
 
-    //    @Override
-//    public String getName() {
-//        return outerTiger.getFullName();
-//    }
-
-    @Override
+        @Override
     public String getName() {
-        return null;
+        return outerTiger.getFullName();
     }
+
+//    @Override
+//    public String getName() {
+//        return null;
+//    }
 
 
 }

@@ -14,14 +14,14 @@ public class Test {
         Animal cat = new Cat();
         Animal dog = new Dog();
 
-//        TigerAdapter ot = new TigerAdapter(new OuterTiger());
-        Animal outerTigerProxy = new OuterTigerProxy();
+        TigerAdapter ot = new TigerAdapter(new OuterTiger());
+//        Animal outerTigerProxy = new OuterTigerProxy();
         DoorMan doorMan = new DoorMan();
 
         doorMan.쫓아낸다(mouse);
         doorMan.쫓아낸다(cat);
         doorMan.쫓아낸다(dog);
-        doorMan.쫓아낸다(outerTigerProxy);
+        doorMan.쫓아낸다(ot);
 
     }
 }

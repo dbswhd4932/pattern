@@ -4,9 +4,9 @@ package 어댑터;
 // Animal 타입을 상속받으면 OCP 원칙 위배
 public class OuterTiger {
 
-//    private String fullName = "호랑이";
-//
-//    public String getFullName() {
-//        return fullName;
-//    }
+    private String fullName = "호랑이";
+
+    public String getFullName() {
+        return fullName;
+    }
 }
