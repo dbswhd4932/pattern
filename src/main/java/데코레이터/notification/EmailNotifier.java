@@ -1,6 +1,6 @@
 package 데코레이터.notification;
 
-public class EmailNotifier implements Notifier{
+public class EmailNotifier implements Notifier {
 
     private Notifier notifier;
 
@@ -13,7 +13,9 @@ public class EmailNotifier implements Notifier{
 
     @Override
     public void send() {
-        notifier.send();
+        if (notifier != null) {
+            notifier.send();
+        }
         System.out.println("이메일 알림");
     }
 }

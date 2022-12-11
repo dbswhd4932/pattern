@@ -49,9 +49,19 @@ public class App {
         emailNotifier.send();
         System.out.println("__end");
 
-        // 6. 이메일알림 -> 현재 null exception
+        // 6. 이메일알림 -> 현재 null exception -> 조건문으로 변경
         Notifier onlyEmailNotifier = new EmailNotifier();
         onlyEmailNotifier.send();
+        System.out.println("__end");
+
+        // 7. 문자 알림
+        SmsNotifier smsNotifier = new SmsNotifier();
+        smsNotifier.send();
+        System.out.println("__end");
+
+        // 8. 문자 알림 -> 이메일 알림
+        Notifier smsAndEmailNotifier = new EmailNotifier(new SmsNotifier());
+        smsAndEmailNotifier.send();
         System.out.println("__end");
     }
 
